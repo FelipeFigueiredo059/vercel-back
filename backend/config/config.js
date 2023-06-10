@@ -7,6 +7,7 @@ module.exports = {
     host: process.env.DB_HOST,
     dialect: "mysql",
     timezone: "-03:00",
+    dialectModule: require("mysql2"),
   },
   test: {
     username: "root",
@@ -22,5 +23,6 @@ module.exports = {
     host: process.env.DB_HOST,
     dialect: "mysql",
     timezone: "-03:00",
+    dialectModule: require("mysql2"),
   },
 };
